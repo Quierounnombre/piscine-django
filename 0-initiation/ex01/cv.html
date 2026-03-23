@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Vicente Garcia — Backend & Systems Engineer</title>
+	<style>
+		:root {
+			--ink: #1a1a1a;
+			--paper: #f5f2eb;
+			--accent: #c0392b;
+			--muted: #6b6560;
+			--border: #2c2c2c;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "Georgia", serif;
+			background: var(--paper);
+			color: var(--ink);
+			max-width: 860px;
+			margin: 48px auto;
+			padding: 0 32px 64px;
+			line-height: 1.6;
+		}
+
+		header {
+			border-top: 4px solid var(--ink);
+			border-bottom: 1px solid var(--border);
+			padding: 28px 0 20px;
+			margin-bottom: 40px;
+		}
+
+		h1 {
+			font-size: 2.6rem;
+			letter-spacing: -0.02em;
+			font-weight: normal;
+		}
+
+		header p {
+			color: var(--muted);
+			font-style: italic;
+			margin-top: 6px;
+		}
+
+		header address {
+			font-style: normal;
+			font-size: 0.85rem;
+			margin-top: 10px;
+			color: var(--muted);
+		}
+
+		section {
+			margin-bottom: 36px;
+		}
+
+		h2 {
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+			color: var(--accent);
+			border-bottom: 1px solid currentColor;
+			padding-bottom: 4px;
+			margin-bottom: 16px;
+		}
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		/* ── Table ─────────────────────────────────────────── */
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-style: solid;
+			font-size: 0.9rem;
+			margin-top: 8px;
+		}
+
+		th, td {
+			border: 1px solid var(--border);
+			padding: 8px 12px;
+			text-align: left;
+		}
+
+		th {
+			background: var(--ink);
+			color: var(--paper);
+			font-weight: normal;
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+		}
+
+		/* ── Lists ─────────────────────────────────────────── */
+		ul, ol {
+			padding-left: 1.4em;
+		}
+
+		li {
+			margin-bottom: 6px;
+		}
+
+		/* ── Experience entry ──────────────────────────────── */
+		.entry {
+			margin-bottom: 22px;
+		}
+
+		.entry-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			margin-bottom: 6px;
+		}
+
+		.entry-header strong {
+			font-size: 1rem;
+		}
+
+		.entry-header time {
+			font-size: 0.8rem;
+			color: var(--muted);
+		}
+
+		.entry-role {
+			font-style: italic;
+			color: var(--muted);
+			font-size: 0.88rem;
+			margin-bottom: 8px;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<h1>Vicente Garcia</h1>
+		<p>Backend &amp; Systems Engineer — MVPs &amp; Product-Driven Development</p>
+		<address>
+			Madrid / Seville &nbsp;·&nbsp; +34 647 498 834 &nbsp;·&nbsp;
+			<a href="mailto:vicengandrade@gmail.com">vicengandrade@gmail.com</a> &nbsp;·&nbsp;
+			<a href="https://github.com/Quierounnombre" target="_blank">GitHub</a>
+		</address>
+	</header>
+
+	<main>
+
+		<section>
+			<h2>Summary</h2>
+			<p>
+				Backend and systems engineer focused on building MVPs and early-stage products.
+				Experienced in designing simple, reliable backends under time and resource constraints.
+				Strong foundation in C/C++, Go, and low-level systems, with hands-on ownership of
+				product development, infrastructure, and iteration.
+			</p>
+		</section>
+
+		<section>
+			<h2>Experience</h2>
+
+			<article class="entry">
+				<div class="entry-header">
+					<strong>SayFly!</strong>
+					<time>Jan 2022 – Jun 2022</time>
+				</div>
+				<p class="entry-role">Solo Developer</p>
+				<ul>
+					<li>Took ownership of an existing Django codebase from the departing CTO.</li>
+					<li>Maintained 99% uptime while expanding features: discount codes, streamlined user workflows.</li>
+					<li>Delivered stable handover with documentation for future teams.</li>
+				</ul>
+			</article>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Category</th>
+						<th>Technologies</th>
+						<th>Level</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Languages</td>
+						<td>C / C++, Go, Python, SQL, Assembly, JavaScript</td>
+						<td>Advanced</td>
+					</tr>
+					<tr>
+						<td>Frameworks</td>
+						<td>Django, Gin (Go)</td>
+						<td>Intermediate</td>
+					</tr>
+					<tr>
+						<td>DevOps &amp; Infra</td>
+						<td>Docker, Linux (NixOS), Nginx, AWS, Cloudflare, PostgreSQL</td>
+						<td>Advanced</td>
+					</tr>
+					<tr>
+						<td>Tooling</td>
+						<td>Git, Neovim, Valgrind, SSH, ZSH, Arduino, Raspberry Pi</td>
+						<td style="border-color: #424242;">Proficient</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h2>Projects</h2>
+			<ol>
+				<li>
+					<strong>ft_transcendence</strong> Online Pong game. Built user management backend
+					with 2FA and JWT. Designed REST APIs with simplicity first.
+				</li>
+				<li>
+					<strong>Taskmaster</strong> Supervisord reimplementation in pure Go. Concurrent
+					client-server architecture using goroutines and channels.
+				</li>
+				<li>
+					<strong>Libasm</strong> Core C stdlib functions in x86-64 Assembly. Direct register
+					and stack manipulation.
+				</li>
+				<li>
+					<strong>ft_ping</strong> Ping utility in pure C using ICMP, IPv4, raw sockets,
+					and manual memory management.
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<h2>Soft Skills</h2>
+			<ul>
+				<li>MVP definition &amp; scope control</li>
+				<li>Stakeholder management &amp; communication</li>
+				<li>Strategic thinking &amp; KPI definition</li>
+				<li>Resilience &amp; conflict resolution</li>
+				<li>Business model design &amp; storytelling</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Education</h2>
+
+			<article class="entry">
+				<div class="entry-header">
+					<strong>42 Madrid</strong>
+					<time>Sep 2022 – Apr 2025</time>
+				</div>
+				<p>
+					Project-based, peer-to-peer software engineering curriculum. Deep focus on
+					fundamentals via C/C++: memory management, concurrency, systems programming.
+				</p>
+			</article>
+
+			<article class="entry">
+				<div class="entry-header">
+					<strong>ESCP Business School — Entrepreneurship Program</strong>
+					<time>Sep 2024 – Dec 2024</time>
+				</div>
+				<p>
+					Four-month intensive in a multicultural cohort (India, Brazil, China, Italy, France).
+					Core takeaway: building fast, effective cross-cultural teams.
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<h2>Languages</h2>
+			<ul>
+				<li>Spanish: Native</li>
+				<li>English: Bilingual</li>
+			</ul>
+		</section>
+
+	</main>
+
+</body>
+</html>
